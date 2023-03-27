@@ -29,5 +29,10 @@ public class BinarySearch {
     }
     //ToDo 2: Call the above method and test the algorithm  
     // provide time and space analysis 
+    
+    public static void main(String[] args){ //time = O(log n) space = O(1)
+        int arr[] = { 0, 1, 4, 5, 8 };
+        runBinarySearchIteratively(arr, 5, 0, arr.length);
+    }
 
 }

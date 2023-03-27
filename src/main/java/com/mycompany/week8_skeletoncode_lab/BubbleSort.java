@@ -10,14 +10,23 @@ package com.mycompany.week8_skeletoncode_lab;
  */
 public class BubbleSort {
 
-    public static void bubbleSort(int a[], int size) {
+    public static void bubbleSort(int a[], int size) { //Complexity N^2
         int outer, inner, temp;
         for (outer = size - 1; outer > 0; outer--) { // counting down
             for (inner = 0; inner < outer; inner++) { // bubbling up
                 //ToDo 3: complete this algorithm, test it, provide its time complexity
+                    if (a[inner] > a[inner + 1]) {
+                    // swap arr[j+1] and arr[j]
+                    temp = a[inner];
+                    a[inner] = a[inner + 1];
+                    a[inner + 1] = temp;
+                }
+                        
+                    
+                }
             }
         }
     }
     
     
-}
+
